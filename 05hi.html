@@ -108,6 +108,16 @@
     .howto{flex-direction:column}
     .step-arrow{display:none}
   }
+
+  /* ホームへもどるボタン */
+  .home-back-btn{position:fixed;bottom:20px;right:20px;z-index:200;
+    display:inline-flex;align-items:center;gap:7px;
+    background:#2d7dd2;color:#fff;border:none;border-radius:999px;
+    padding:11px 20px;font-size:.9rem;font-weight:800;
+    box-shadow:0 4px 16px rgba(45,125,210,.4);
+    cursor:pointer;text-decoration:none;font-family:inherit;
+    transition:transform .2s,box-shadow .2s}
+  .home-back-btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(45,125,210,.5)}
 </style>
 </head>
 <body>
@@ -350,5 +360,6 @@ function setBreadcrumb(text) {
 buildLessonGrid();
 (function(){var t=document.querySelector('.tobira-card');var d=IMG_DATA['tobira'];if(t&&(!d||!d.images||!d.images.length))t.style.display='none';})();
 </script>
+  <a href="index.html" class="home-back-btn">🏠 もどる</a>
 </body>
 </html>
