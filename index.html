@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>算数アタック！ポータル</title>
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet">
+<title>算数アタック！ポータル ｜ 6年生</title>
 <style>
   :root {
-    --bg: #fff9f0;
-    --primary: #ff6b35;
+    --bg: #f7f0ff;
+    --primary: #9b5de5;
     --secondary: #ffd166;
     --accent: #06d6a0;
     --blue: #118ab2;
@@ -28,7 +27,7 @@
 
   /* ===== HEADER ===== */
   header {
-    background: linear-gradient(135deg, #ff6b35 0%, #ff9f1c 50%, #ffcb47 100%);
+    background: linear-gradient(135deg, #6f35b5 0%, #9b5de5 50%, #c9a3f5 100%);
     padding: 2rem 1rem 3rem;
     text-align: center;
     position: relative;
@@ -254,11 +253,33 @@
     .card-emoji { font-size: 2.2rem; }
     .card-title { font-size: 0.88rem; }
   }
+
+  .back-btn {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    font-weight: 900;
+    font-size: 0.78rem;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    text-decoration: none;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255,255,255,0.4);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .back-btn:hover {
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+  }
 </style>
 </head>
 <body>
 
 <header>
+  <a href="https://kou-no1.github.io/math-portal/" class="back-btn">← 学年選択にもどる</a>
+
   <div class="header-deco">➕</div>
   <div class="header-deco">✖️</div>
   <div class="header-deco">📐</div>
@@ -271,7 +292,7 @@
 
   <div class="wave">
     <svg viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:50px;width:100%">
-      <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,50 L0,50 Z" fill="#fff9f0"/>
+      <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,50 L0,50 Z" fill="#f7f0ff"></path>
     </svg>
   </div>
 </header>
@@ -281,98 +302,98 @@
 
   <div class="grid">
 
-    <a href="01taisyo.html" class="card" style="--card-color:#ff6b35">
+    <a href="https://kou-no1.github.io/math-portal-06/01taisyo.html" class="card" style="--card-color:#ff6b35">
       <div class="card-emoji">🪞</div>
       <span class="card-num">01</span>
       <div class="card-title">対称な図形</div>
       <div class="card-desc">線対称・点対称</div>
     </a>
 
-    <a href="02moji.html" class="card" style="--card-color:#ff9f1c">
+    <a href="https://kou-no1.github.io/math-portal-06/02moji.html" class="card" style="--card-color:#ff9f1c">
       <div class="card-emoji">🔤</div>
       <span class="card-num">02</span>
       <div class="card-title">文字と式</div>
       <div class="card-desc">xをつかった式</div>
     </a>
 
-    <a href="03bunsukakezan.html" class="card" style="--card-color:#ffd166">
+    <a href="https://kou-no1.github.io/math-portal-06/03bunsukakezan.html" class="card" style="--card-color:#ffd166">
       <div class="card-emoji">✖️</div>
       <span class="card-num">03</span>
       <div class="card-title">分数×整数、<br>分数÷整数、<br>分数×分数</div>
       <div class="card-desc">分数のかけ算</div>
     </a>
 
-    <a href="04bunsuwarizan.html" class="card" style="--card-color:#06d6a0">
+    <a href="https://kou-no1.github.io/math-portal-06/04bunsuwarizan.html" class="card" style="--card-color:#06d6a0">
       <div class="card-emoji">➗</div>
       <span class="card-num">04</span>
       <div class="card-title">分数÷分数</div>
       <div class="card-desc">分数のわり算</div>
     </a>
 
-    <a href="05hi.html" class="card" style="--card-color:#118ab2">
+    <a href="https://kou-no1.github.io/math-portal-06/05hi.html" class="card" style="--card-color:#118ab2">
       <div class="card-emoji">📊</div>
       <span class="card-num">05</span>
       <div class="card-title">比</div>
       <div class="card-desc">比の値・等しい比</div>
     </a>
 
-    <a href="06kakudaizu.html" class="card" style="--card-color:#9b5de5">
+    <a href="https://kou-no1.github.io/math-portal-06/06kakudaizu.html" class="card" style="--card-color:#9b5de5">
       <div class="card-emoji">🗺️</div>
       <span class="card-num">06</span>
       <div class="card-title">拡大図と縮図</div>
       <div class="card-desc">拡大・縮小の関係</div>
     </a>
 
-    <a href="07datasirabe.html" class="card" style="--card-color:#ef233c">
+    <a href="https://kou-no1.github.io/math-portal-06/07datasirabe.html" class="card" style="--card-color:#ef233c">
       <div class="card-emoji">📈</div>
       <span class="card-num">07</span>
       <div class="card-title">データの調べ方</div>
       <div class="card-desc">他教科との関連：英語</div>
     </a>
 
-    <a href="08kakuchumenseki.html" class="card" style="--card-color:#ff6b35">
+    <a href="https://kou-no1.github.io/math-portal-06/08kakuchumenseki.html" class="card" style="--card-color:#ff6b35">
       <div class="card-emoji">⭕</div>
       <span class="card-num">08</span>
       <div class="card-title">円の面積</div>
       <div class="card-desc">半径×半径×3.14</div>
     </a>
 
-    <a href="09kakuchutaiseki.html" class="card" style="--card-color:#ff9f1c">
+    <a href="https://kou-no1.github.io/math-portal-06/09kakuchutaiseki.html" class="card" style="--card-color:#ff9f1c">
       <div class="card-emoji">📦</div>
       <span class="card-num">09</span>
       <div class="card-title">角柱と円柱の<br>体積</div>
       <div class="card-desc">底面積×高さ</div>
     </a>
 
-    <a href="10oyoso.html" class="card" style="--card-color:#06d6a0">
+    <a href="https://kou-no1.github.io/math-portal-06/10oyoso.html" class="card" style="--card-color:#06d6a0">
       <div class="card-emoji">📐</div>
       <span class="card-num">10</span>
       <div class="card-title">およその面積と<br>体積</div>
       <div class="card-desc">がい数で求める</div>
     </a>
 
-    <a href="11hirei.html" class="card" style="--card-color:#118ab2">
+    <a href="https://kou-no1.github.io/math-portal-06/11hirei.html" class="card" style="--card-color:#118ab2">
       <div class="card-emoji">📉</div>
       <span class="card-num">11</span>
       <div class="card-title">比例と反比例</div>
       <div class="card-desc">グラフと関係式</div>
     </a>
 
-    <a href="12narabekata.html" class="card" style="--card-color:#ef233c">
+    <a href="https://kou-no1.github.io/math-portal-06/12narabekata.html" class="card" style="--card-color:#ef233c">
       <div class="card-emoji">🎲</div>
       <span class="card-num">12</span>
       <div class="card-title">並べ方と<br>組み合わせ方</div>
       <div class="card-desc">順列・組合せ</div>
     </a>
 
-    <a href="12-2data.html" class="card" style="--card-color:#9b5de5">
+    <a href="https://kou-no1.github.io/math-portal-06/12-2data.html" class="card" style="--card-color:#9b5de5">
       <div class="card-emoji">🔍</div>
       <span class="card-num">12-2</span>
       <div class="card-title">データを使って<br>生活を見なおそう</div>
       <div class="card-desc">算数で読みとこう</div>
     </a>
 
-    <a href="13siage.html" class="card" style="--card-color:#ffd166">
+    <a href="https://kou-no1.github.io/math-portal-06/13siage.html" class="card" style="--card-color:#ffd166">
       <div class="card-emoji">🏆</div>
       <span class="card-num">13</span>
       <div class="card-title">算数のしあげ</div>
@@ -384,5 +405,6 @@
 
 <footer>本庄市教育委員会 ✦ 算数アタック問題ポータル</footer>
 
-</body>
-</html>
+
+
+</body></html>
